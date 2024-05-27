@@ -20,7 +20,7 @@ Este projeto é um gerador de senhas seguro e altamente configurável, projetado
 1. Clone o repositório:
     
     ```bash
-    git clone <https://github.com/karlosantn/generatepassword.git>
+    git clone <https://github.com/karlosantn/generatepassword>
     
     ```
     
