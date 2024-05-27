@@ -1,6 +1,13 @@
-// script.js
 function generatePassword() {
-    const length = document.getElementById('length').value;
+    const lengthInput = document.getElementById('length').value;
+    const length = parseInt(lengthInput);
+
+    // Verifica se o comprimento é um número válido e está dentro do intervalo permitido
+    if (isNaN(length) || length <= 0 || length > 128) {
+        alert('Por favor, insira um comprimento válido entre 1 e 128.');
+        return;
+    }
+
     const includeUppercase = document.getElementById('uppercase').checked;
     const includeLowercase = document.getElementById('lowercase').checked;
     const includeNumbers = document.getElementById('numbers').checked;
