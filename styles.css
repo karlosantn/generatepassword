@@ -4,9 +4,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .container {
@@ -15,18 +17,23 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 20%;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
 }
 
 label {
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
+    display: block;
     margin-top: 10px;
 }
 
 input[type="number"] {
-    width: 60px;
+    width: calc(100% - 22px); /* To account for padding and border */
     margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 div {
@@ -34,17 +41,18 @@ div {
     margin-bottom: 10px;
 }
 
-
 button {
     background-color: #8BC34A;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button:hover {
@@ -59,4 +67,5 @@ p#password {
     padding: 10px;
     border-radius: 8px;
     text-align: center;
+    box-sizing: border-box;
 }
